@@ -30,12 +30,17 @@ def determina_ganador(jugada_usuario, jugada_ordenador):
     else:
         return "Perdiste"
     
-def jugar():
+def torneo():
     eleccion_ordenador = ordenador_decide_jugada()
     print(eleccion_ordenador)
     eleccion_jugador = usuario_decide_jugada()
     victoria = determina_ganador(eleccion_jugador, eleccion_ordenador)
-    
     print(victoria)
+    if victoria == "Ganaste" :
+        puntuacion =+ 1
+    elif victoria == "Perdiste":
+        puntuacion =- 1
+    
 if __name__ == "__main__":
-    jugar()
+    for 3 in puntuacion ;
+        torneo()
