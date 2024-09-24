@@ -13,6 +13,7 @@ def usuario_decide_jugada():
     Pide al usuario que elija entre piedra, papel o tijeras y devuelve la elección.     
     '''
     eleccion_usuario = input("Elige piedra, papel o tijeras: ")
+
     while eleccion_usuario not in ["piedra", "papel", "tijeras"]:
         eleccion_usuario = input("Opción no válida, por favor elige piedra, papel o tijeras: ")
     return eleccion_usuario
@@ -37,20 +38,21 @@ def determina_ganador(jugada_usuario, jugada_ordenador):
 
 
 def torneo():
-    puntuacion =+ 0
+    puntuacion =+ 0 + puntuacion_final
     eleccion_ordenador = ordenador_decide_jugada()
     print(eleccion_ordenador)
     eleccion_jugador = usuario_decide_jugada()
     victoria = determina_ganador(eleccion_jugador, eleccion_ordenador)
     print(victoria)
     if victoria == "Ganaste" :
-        puntuacion =+ 1
+        puntuacion =+ 1 + puntuacion
     elif victoria == "Perdiste":
-        puntuacion =- 1
+        puntuacion =- 1 + puntuacion
     print(puntuacion)
     return puntuacion
 
 if __name__ == "__main__":
-    puntuacion_final =+ 0
+    puntuacion_final =+   0
     while puntuacion_final < 3 :
-     puntuacion_final =+ torneo()
+     puntuacion_final =+ torneo() + puntuacion_final
+     print(puntuacion_final)

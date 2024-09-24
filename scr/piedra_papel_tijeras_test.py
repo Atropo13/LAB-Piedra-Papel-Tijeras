@@ -32,12 +32,16 @@ def test_determina_ganador(eleccion_jugador, eleccion_ordenador):
 if __name__ == "__main__":
     #test_ordenador_decide_jugada()
     #test_usuario_decide_jugada()
-    test_determina_ganador("piedra", "tijeras")
-    test_determina_ganador("piedra", "papel")
-    test_determina_ganador("piedra", "piedra")
-    test_determina_ganador("tijeras", "tijeras")
-    test_determina_ganador("tijeras", "papel")
-    test_determina_ganador("tijeras", "piedra")
-    test_determina_ganador("papel", "tijeras")
-    test_determina_ganador("papel", "papel")
-    test_determina_ganador("papel", "piedra")
+    #test_determina_ganador("piedra", "tijeras")#
+    #test_determina_ganador("piedra", "papel")#
+    #test_determina_ganador("piedra", "piedra")#
+    #test_determina_ganador("tijeras", "tijeras")#
+    #test_determina_ganador("tijeras", "papel")#
+    #test_determina_ganador("tijeras", "piedra")#
+    #test_determina_ganador("papel", "tijeras")#
+    #test_determina_ganador("papel", "papel")#
+    #test_determina_ganador("papel", "piedra")#
+    puntuacion_test =+ 0
+    while puntuacion_test < 3 :
+        puntuacion_test =+ puntuacion_test + 1
+        print(puntuacion_test)
