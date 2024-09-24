@@ -23,14 +23,21 @@ def determina_ganador(jugada_usuario, jugada_ordenador):
         return "Empate"
     elif jugada_usuario == "piedra" and jugada_ordenador == "tijeras":
         return "Ganaste"
-    elif jugada_usuario == "tijera" and jugada_ordenador == "papel":
+    elif jugada_usuario == "tijeras" and jugada_ordenador == "papel":
         return "Ganaste"
     elif  jugada_usuario == "papel" and jugada_ordenador == "piedra":
         return "Ganaste"
     else:
         return "Perdiste"
     
+
+    
+
+
+
+
 def torneo():
+    puntuacion =+ 0
     eleccion_ordenador = ordenador_decide_jugada()
     print(eleccion_ordenador)
     eleccion_jugador = usuario_decide_jugada()
@@ -40,7 +47,10 @@ def torneo():
         puntuacion =+ 1
     elif victoria == "Perdiste":
         puntuacion =- 1
-    
+    print(puntuacion)
+    return puntuacion
+
 if __name__ == "__main__":
-    for 3 in puntuacion ;
-        torneo()
+    puntuacion_final =+ 0
+    while puntuacion_final < 3 :
+     puntuacion_final =+ torneo()
