@@ -48,11 +48,13 @@ def torneo():
         puntuacion =+ 1 + puntuacion
     elif victoria == "Perdiste":
         puntuacion =- 1 + puntuacion
-    print(puntuacion)
+    
     return puntuacion
 
 if __name__ == "__main__":
     puntuacion_final =+   0
     while puntuacion_final < 3 :
-     puntuacion_final =+ torneo() + puntuacion_final
+     puntuacion_final = torneo() 
      print(puntuacion_final)
+    if puntuacion_final == 3:
+        print("has ganado la partida")

@@ -45,3 +45,5 @@ if __name__ == "__main__":
     while puntuacion_test < 3 :
         puntuacion_test =+ puntuacion_test + 1
         print(puntuacion_test)
+
+        
